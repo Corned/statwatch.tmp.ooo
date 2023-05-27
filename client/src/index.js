@@ -20,6 +20,12 @@ const router = createBrowserRouter(
         <Route path="4" element={<h1>4</h1>}/>
         <Route path="5" element={<h1>5</h1>}/>
         <Route path="6" element={<h1>6</h1>}/>
+        <Route path="7" element={<h1>7</h1>}/>
+        <Route path="8" element={<h1>8</h1>}/>
+        <Route path="9" element={<h1>9</h1>}/>
+        <Route path="10" element={<h1>10</h1>}/>
+        <Route path="11" element={<h1>11</h1>}/>
+        <Route path="12" element={<h1>12</h1>}/>
       </Route>
       
       <Route path="panel/*" element={<h1>panel</h1>}>
