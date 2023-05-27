@@ -18,6 +18,10 @@ const StyledLink = styled(Link)`
   align-items: center;
   justify-items: center;
 
+  $ svg {
+    color: rgb(20, 20, 20);
+  }
+
   ${props => props.selected && css`
     background-color: #E84C3D;
     color: white;
@@ -49,6 +53,11 @@ const StyledLink = styled(Link)`
     overflow: hidden;
     text-align: left;
     width: 100%;
+  }
+
+  & .link__icon {
+    height: 24px;
+    width: 24px;
   }
 `
 

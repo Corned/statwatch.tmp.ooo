@@ -1,3 +1,5 @@
+import { ReactSVG } from "react-svg"
+
 import { useState } from "react"
 import classNames from "classnames"
 
@@ -5,10 +7,12 @@ import { NavContext } from "context/NavContext"
 import navigationData from "constants/navigationData"
 import Link from "./Link"
 
-import MenuOpenIcon from "remixicon-react/MenuLineIcon"
-import MenuCloseIcon from "remixicon-react/MenuFoldFillIcon"
 import "./index.css"
 import Section from "./Section"
+
+const Icon = (filename) => {
+  return <ReactSVG className="link__icon" src={`assets/${filename}.svg`}/>
+}
 
 const Navigation = () => {
   const [ isCollapsed, setCollapsed ] = useState(false)
@@ -22,14 +26,14 @@ const Navigation = () => {
     { "collapsed": isCollapsed },
   )
 
-  const NavigationCollapseToggleIcon = isCollapsed ? MenuOpenIcon : MenuCloseIcon
+  const NavigationCollapseToggleIcon = isCollapsed ? Icon("menu-line") : Icon("menu-fold-line") 
   
   return (
     <NavContext.Provider value={isCollapsed}>
 
       <nav className={navigationClasses}>
         <button className="navigation__collapse-toggle" onClick={toggleCollapse}>
-          <NavigationCollapseToggleIcon/>
+          { NavigationCollapseToggleIcon }
         </button>
 
         <h1 className="navigation__header">statwatch</h1>

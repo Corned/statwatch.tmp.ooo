@@ -1,27 +1,8 @@
-import MenuOpenIcon from "remixicon-react/MenuLineIcon"
-import MenuCloseIcon from "remixicon-react/MenuFoldFillIcon"
+import { ReactSVG } from "react-svg"
 
-import DashboardIcon from "remixicon-react/DashboardFillIcon"
-
-import StreamSetupIcon from "remixicon-react/QuestionFillIcon"
-import TeamBuilderIcon from "remixicon-react/ToolsFillIcon"
-import ControlsIcon from "remixicon-react/RemoteControl2FillIcon"
-import LivestatIcon from "remixicon-react/BarChart2FillIcon"
-import UICreatorIcon from "remixicon-react/StackFillIcon"
-import StatsIcon from "remixicon-react/LineChartFillIcon"
-
-import LabsIcon from "remixicon-react/FlaskFillIcon"
-import AdminIcon from "remixicon-react/TerminalBoxFillIcon"
-import MyProfileIcon from "remixicon-react/ProfileFillIcon"
-import LogoutIcon from "remixicon-react/LogoutBoxRFillIcon"
-
-
-import DemoIcon from "remixicon-react/SlideshowFillIcon"
-import OrganizationIcon from "remixicon-react/GroupFillIcon"
-
-import TwitterIcon from "remixicon-react/TwitterFillIcon"
-import DiscordIcon from "remixicon-react/DiscordFillIcon"
-import RedditIcon from "remixicon-react/RedditFillIcon"
+const Icon = (filename) => {
+  return <ReactSVG className="link__icon" src={`assets/${filename}.svg`}/>
+}
 
 export default [
   {
@@ -31,7 +12,7 @@ export default [
       {
         label: "Home",
         to: "/",
-        icon: <DashboardIcon/>
+        icon: Icon("dashboard-fill"),
       },
     ]
   },
@@ -43,23 +24,23 @@ export default [
     links: [
       {
         label: "Scoreboard",
-        to: "/5",
-        icon: <LabsIcon/>
+        to: "/1",
+        icon: Icon("broadcast-fill"),
       },
       { 
         label: "Match Statistics",
-        to: "/5555",
-        icon: <StatsIcon/>
+        to: "/2",
+        icon: Icon("line-chart-fill"),
       },
       { 
         label: "Livestat",
-        to: "/4",
-        icon: <LivestatIcon/>
+        to: "/3",
+        icon: Icon("bar-chart-2-fill"),
       },
       { 
         label: "UI Builder",
-        to: "/545",
-        icon: <UICreatorIcon/>
+        to: "/4",
+        icon: Icon("stack-fill"),
       },
     ]
   },
@@ -71,13 +52,13 @@ export default [
     links: [
       { 
         label: "My Organizations",
-        to: "/2",
-        icon: <OrganizationIcon/>
+        to: "/5",
+        icon: Icon("group-fill"),
       },
       {
         label: "My Profile",
         to: "/6",
-        icon: <MyProfileIcon/>
+        icon: Icon("profile-fill"),
       },
     ]
   },
@@ -89,18 +70,18 @@ export default [
     links: [
       { 
         label: "Twitter",
-        to: "/2",
-        icon: <TwitterIcon/>
+        to: "/7",
+        icon: Icon("twitter-fill"),
       },
       { 
         label: "Discord",
-        to: "/2",
-        icon: <DiscordIcon/>
+        to: "/8",
+        icon: Icon("discord-fill")
       },
       { 
         label: "Reddit",
-        to: "/2",
-        icon: <RedditIcon/>
+        to: "/9",
+        icon: Icon("reddit-fill"),
       },
     ]
   },
@@ -113,13 +94,13 @@ export default [
     links: [
       {
         label: "Admin",
-        to: "/6",
-        icon: <AdminIcon/>
+        to: "/10",
+        icon: Icon("terminal-box-fill"),
       },
       {
         label: "Log out",
-        to: "/7",
-        icon: <LogoutIcon/>
+        to: "/11",
+        icon: Icon("logout-box-fill"),
       },
     ]
   }
