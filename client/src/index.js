@@ -7,13 +7,14 @@ import "./index.css"
 import "./scrollbar.css"
 import { createBrowserRouter, createRoutesFromElements, RouterProvider, Route } from "react-router-dom"
 import Error404 from "views/404"
+import HomeView from "views/Home"
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/">
     
       <Route path="" element={<App/>}>
-        <Route path="" element={<h1>Home</h1>}/>
+        <Route path="" element={<HomeView/>}/>
         <Route path="1" element={<h1>1</h1>}/>
         <Route path="2" element={<h1>2</h1>}/>
         <Route path="3" element={<h1>3</h1>}/>

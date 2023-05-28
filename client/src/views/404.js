@@ -1,6 +1,10 @@
+import ViewContainer from "./ViewContainer"
+
 const Error404 = () => {
   return (
-    <h1>404</h1>
+    <ViewContainer>
+      <h1>404</h1>
+    </ViewContainer>
   )
 }
 

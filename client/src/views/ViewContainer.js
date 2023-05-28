@@ -1,23 +1,21 @@
-import Navigation from "components/Navigation"
 import styled from "styled-components"
 
 
 const StyledDiv = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 20px;
+
+  background: white;
+  flex-grow: 2;
+  
+  border-radius: 10px 0 0 10px;
+  padding: 40px 0 0 20px;
 `
-
-
-
-
-
-
 
 const ViewContainer = ({ children }) => {
   return (
     <StyledDiv>
-      <Navigation/>
       { children }
     </StyledDiv>
   )
