@@ -29,6 +29,11 @@
   margin-left: auto;
 }
 
+.navigation__collapse-toggle > .link__icon {
+  width: 24px;
+  height: 24px;
+}
+
 .navigation__collapse-toggle:hover {
   background-color: rgba(0, 0, 0, 0.1);
 }
