@@ -27,9 +27,12 @@ const StyledLink = styled(Link)`
   
     ${'' /* background-color: #E84C3D; */}
 
-    background: #ee0979;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #ff6a00, #ee0979); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #fe8c00;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(135deg, #f83600, #fe8c00);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(135deg, #f83600, #fe8c00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
 
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -1px 0px inset;
 
@@ -45,7 +48,7 @@ const StyledLink = styled(Link)`
   `}
   
 
-  ${props => props.collapsed && css`
+  ${props => props.collapsed === true && css`
     max-height: 36px;
 
     &:hover > .tooltip {
@@ -82,7 +85,9 @@ export default ({ icon, to, label, header }) => {
     <StyledLink
       className="navigation__link"
       selected={pathname === to}
-      collapsed={collapsed}
+      // for tooltips
+      // had to do hax to remove a "non-boolean" error
+      collapsed={collapsed ? 1 : 0}
       to={to}
     >
       { icon }

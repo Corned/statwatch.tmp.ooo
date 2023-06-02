@@ -23,7 +23,7 @@ const Navigation = () => {
 
   const navigationClasses = classNames(
     "navigation",
-    { "collapsed": isCollapsed },
+    { "collapsed": isCollapsed ? true : false },
   )
 
   const NavigationCollapseToggleIcon = isCollapsed ? Icon("menu-line") : Icon("menu-fold-line") 

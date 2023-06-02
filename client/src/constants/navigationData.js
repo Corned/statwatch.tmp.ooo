@@ -24,22 +24,22 @@ export default [
     links: [
       {
         label: "Scoreboard",
-        to: "/1",
+        to: "/demo/scoreboard",
         icon: Icon("broadcast-fill"),
       },
       { 
         label: "Match Statistics",
-        to: "/2",
+        to: "/demo/match-statistics",
         icon: Icon("line-chart-fill"),
       },
       { 
         label: "Livestat",
-        to: "/3",
+        to: "/demo/livestat",
         icon: Icon("bar-chart-2-fill"),
       },
       { 
         label: "UI Builder",
-        to: "/4",
+        to: "/demo/ui-builder",
         icon: Icon("stack-fill"),
       },
     ]
@@ -52,12 +52,12 @@ export default [
     links: [
       { 
         label: "My Organizations",
-        to: "/5",
+        to: "/me/orgs",
         icon: Icon("group-fill"),
       },
       {
         label: "My Profile",
-        to: "/6",
+        to: "/me",
         icon: Icon("profile-fill"),
       },
     ]
