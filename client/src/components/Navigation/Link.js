@@ -23,7 +23,16 @@ const StyledLink = styled(Link)`
   }
 
   ${props => props.selected && css`
-    background-color: #E84C3D;
+
+  
+    ${'' /* background-color: #E84C3D; */}
+
+    background: #ee0979;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff6a00, #ee0979); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -1px 0px inset;
+
     color: white;
     text-shadow: 0px 0px 0px #000000;
   `}

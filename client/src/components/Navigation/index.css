@@ -67,7 +67,7 @@
 .navigation__section {
   display: flex;
   flex-direction: column;
-  gap: 0px;
+  gap: 1px;
   
   transition: gap 0.1s linear;
 }

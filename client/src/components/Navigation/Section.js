@@ -6,6 +6,7 @@ const SectionHeader = styled.p`
   margin: 0 0 3px 5px;
   font-weight: bold;
   font-size: 20px;
+  gap: 2px;
 `
 
 
